@@ -15,3 +15,14 @@ const makeOrange=document.getElementById("makeorange");
 makeOrange.addEventListener("click",function(){
     document.body.style.backgroundColor="orange";
 })
+
+
+const buttonClick=document.getElementById("buttonClick").addEventListener("click",()=>{
+    console.log('hi');
+
+    const inputValue=document.getElementById("inputField").value;
+   const textValue=document.getElementById("changed");
+   textValue.innerText=inputValue;
+   
+    console.log(inputValue);
+})
